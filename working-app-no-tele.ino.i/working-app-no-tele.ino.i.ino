@@ -81,7 +81,7 @@ void setup() {
   }
 
   display.clearDisplay();
-  display.setTextSize(1.1);
+  display.setTextSize(0.75);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   display.display();
