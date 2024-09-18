@@ -9,8 +9,8 @@
 #define SCREEN_HEIGHT 64
 
 // Width to use for text display (exclude margins)
-#define USABLE_SCREEN_WIDTH 86
-#define MARGIN 21
+#define USABLE_SCREEN_WIDTH 64
+#define MARGIN 32
 
 // Define the display instance
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
@@ -81,7 +81,7 @@ void setup() {
   }
 
   display.clearDisplay();
-  display.setTextSize(2);
+  display.setTextSize(1.1);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
   display.display();
